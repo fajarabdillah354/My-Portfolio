@@ -9,7 +9,7 @@ public class LombaRepositoryImpl implements LombaRepository{
 
   @Override
   public ListLomba[] getAll() {
-    return new ListLomba[0];
+    return data;
   }
 
 
