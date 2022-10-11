@@ -1,4 +1,4 @@
-package LatihanMembuatTodolist.test.Service;
+package LatihanMembuatTodolist.Testing.Service;
 
 import LatihanMembuatTodolist.Repository.LombaRepository;
 import LatihanMembuatTodolist.Repository.LombaRepositoryImpl;
