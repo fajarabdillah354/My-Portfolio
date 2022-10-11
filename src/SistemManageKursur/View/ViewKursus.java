@@ -1,7 +1,7 @@
-package SistemManageKursor.View;
+package SistemManageKursur.View;
 
-import SistemManageKursor.Service.ServiceKursus;
-import SistemManageKursor.Util.InputUtil;
+import SistemManageKursur.Service.ServiceKursus;
+import SistemManageKursur.Util.InputUtil;
 
 public class ViewKursus {
   ServiceKursus serviceKursus;
@@ -34,11 +34,27 @@ public class ViewKursus {
 
   public void addSiswa(){
     System.out.println("********* Mendaftar Siswa *********");
-    var daftar = InputUtil.input("pilih x jika ingin batal "){
+    var daftarSiswa = InputUtil.input("Masukan nama Siswa,pilih x jika ingin batal ");
+    if (daftarSiswa.equals("x")){
+      //batal
+    } else if (daftarSiswa.equals("X")) {
+      //batal
+    } else {
+      serviceKursus.daftarSiswa(daftarSiswa);
+    }
+
   }
 
   public void addIns(){
-
+    System.out.println("********* Mendaftar Instruktur *********");
+    var daftarIns = InputUtil.input("Masukan nama Siswa,pilih x jika ingin batal ");
+    if (daftarIns.equals("x")){
+      //batal
+    } else if (daftarIns.equals("X")) {
+      //batal
+    } else {
+      serviceKursus.daftarIns(daftarIns);
+    }
   }
 
   public void profil(){

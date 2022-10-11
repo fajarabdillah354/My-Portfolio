@@ -1,8 +1,15 @@
-package SistemManageKursor.Entities;
+package SistemManageKursur.Entities;
 
 public class DataSiswa {
 
   private String name;
+
+  @Override
+  public String toString() {
+    return "DataSiswa{" +
+            "name='" + name + '\'' +
+            '}';
+  }
 
   public DataSiswa(String name) {
     this.name = name;

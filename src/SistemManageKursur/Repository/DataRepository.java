@@ -1,7 +1,7 @@
-package SistemManageKursor.Repository;
+package SistemManageKursur.Repository;
 
-import SistemManageKursor.Entities.DataInstruktur;
-import SistemManageKursor.Entities.DataSiswa;
+import SistemManageKursur.Entities.DataInstruktur;
+import SistemManageKursur.Entities.DataSiswa;
 
 public interface DataRepository {
 

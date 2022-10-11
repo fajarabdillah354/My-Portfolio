@@ -1,8 +1,15 @@
-package SistemManageKursor.Entities;
+package SistemManageKursur.Entities;
 
 public class DataInstruktur {
 
   private String nameIns;
+
+  @Override
+  public String toString() {
+    return "DataInstruktur{" +
+            "nameIns='" + nameIns + '\'' +
+            '}';
+  }
 
   public DataInstruktur(String nameIns) {
     this.nameIns = nameIns;

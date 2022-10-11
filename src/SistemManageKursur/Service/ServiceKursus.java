@@ -1,4 +1,4 @@
-package SistemManageKursor.Service;
+package SistemManageKursur.Service;
 
 public interface ServiceKursus {
   void menampilkanSiswa();

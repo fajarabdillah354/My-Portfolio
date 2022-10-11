@@ -1,9 +1,9 @@
-package SistemManageKursor.Testing;
+package SistemManageKursur.Testing;
 
-import SistemManageKursor.Repository.DataRepository;
-import SistemManageKursor.Repository.DataRepositoryImpl;
-import SistemManageKursor.Service.ServiceKursus;
-import SistemManageKursor.Service.ServiceKursusImpl;
+import SistemManageKursur.Repository.DataRepository;
+import SistemManageKursur.Repository.DataRepositoryImpl;
+import SistemManageKursur.Service.ServiceKursus;
+import SistemManageKursur.Service.ServiceKursusImpl;
 
 public class TestService {
   public static void main(String[] args) {

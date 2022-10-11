@@ -1,7 +1,9 @@
-package SistemManageKursor.Repository;
+package SistemManageKursur.Repository;
 
-import SistemManageKursor.Entities.DataInstruktur;
-import SistemManageKursor.Entities.DataSiswa;
+import SistemManageKursur.Entities.DataInstruktur;
+import SistemManageKursur.Entities.DataSiswa;
+
+import java.util.Scanner;
 
 public class DataRepositoryImpl implements DataRepository{
 
@@ -51,10 +53,24 @@ public class DataRepositoryImpl implements DataRepository{
     resize();
     for (var i = 0;i<dateSiswa.length;i++){
       if (dateSiswa[i] == null){
+        System.out.println("******** Biodata *********");
         dateSiswa[i] = dataSiswa;
+        System.out.println("Name : "+dateSiswa[i].getName());
+        bioSiswa();
         break;
       }
     }
+  }
+
+  public String bioSiswa(){
+    Scanner scanner = new Scanner(System.in);
+    System.out.print("Umur : ");
+    String inputUmur = scanner.nextLine();
+    System.out.print("Jenis Kelamin : ");
+    String inputKelamin = scanner.nextLine();
+    System.out.print("Domisili : ");
+    String inputDom = scanner.nextLine();
+    return "Sukses mengisi data diri";
   }
 
   @Override
@@ -63,11 +79,25 @@ public class DataRepositoryImpl implements DataRepository{
 
     for (var i = 0;i< dataInstrukturs.length;i++){
       if (dataInstrukturs[i] == null){
+        System.out.println("******** Biodata *********");
         dataInstrukturs[i] = dataInstruktur;
+        System.out.println("Nama : "+dataInstrukturs[i].getNameIns());
+        bioIns();
         break;
       }
     }
 
+  }
+
+  public String bioIns(){
+    Scanner scanner = new Scanner(System.in);
+    System.out.print("Umur : ");
+    String inputUmur = scanner.nextLine();
+    System.out.print("Jenis Kelamin : ");
+    String inputKelamin = scanner.nextLine();
+    System.out.print("Asal Universitas : ");
+    String inputUniv = scanner.nextLine();
+    return "Sukses mengisi data diri";
   }
 
 

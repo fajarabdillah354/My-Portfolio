@@ -1,8 +1,8 @@
-package SistemManageKursor.Service;
+package SistemManageKursur.Service;
 
-import SistemManageKursor.Entities.DataInstruktur;
-import SistemManageKursor.Entities.DataSiswa;
-import SistemManageKursor.Repository.DataRepository;
+import SistemManageKursur.Entities.DataInstruktur;
+import SistemManageKursur.Entities.DataSiswa;
+import SistemManageKursur.Repository.DataRepository;
 
 public class ServiceKursusImpl implements ServiceKursus {
 
@@ -45,7 +45,7 @@ public class ServiceKursusImpl implements ServiceKursus {
   public void daftarSiswa(String nameSiswa) {
     DataSiswa dataSiswa = new DataSiswa(nameSiswa);
     dataRepository.pendaftaranSiswa(dataSiswa);
-    System.out.println("sukses mendaftar Instruktur "+nameSiswa);
+    System.out.println("sukses mendaftar Siswa "+nameSiswa);
 
   }
 
@@ -53,7 +53,7 @@ public class ServiceKursusImpl implements ServiceKursus {
   public void daftarIns(String nameIns) {
     DataInstruktur dataInstruktur = new DataInstruktur(nameIns);
     dataRepository.pendaftaranIns(dataInstruktur);
-    System.out.println("sukses mendaftar Siswa "+nameIns);
+    System.out.println("sukses mendaftar Instruktur "+nameIns);
 
   }
 
